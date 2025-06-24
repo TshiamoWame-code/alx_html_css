@@ -1,0 +1,102 @@
+:root {
+        --accent: #ff6565;
+        --dark: #011627;
+        --light: #ffffff;
+        --max-width: 1000px;
+      }
+
+      *,
+      *::before,
+      *::after {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        font-family: "Inter", Arial, Helvetica, sans-serif;
+        color: var(--light);
+        background-color: var(--dark);
+        line-height: 1.6;
+      }
+
+      img {
+        max-width: 100%;
+        display: block;
+      }
+
+      a {
+        color: inherit;
+        text-decoration: none;
+        font-weight: 500;
+        transition: color 0.2s ease;
+      }
+
+      a:hover,
+      a:active {
+        color: var(--accent); /* link hover/active */
+      }
+
+      button {
+        font-family: inherit;
+        cursor: pointer;
+        transition: opacity 0.2s ease; /* button hover/active */
+      }
+
+      button:hover,
+      button:active {
+        opacity: 0.9;
+      }
+      .container {
+        width: 100%;
+        max-width: var(--max-width);
+        margin-inline: auto;
+        padding-inline: 1rem;
+      }
+
+      section {
+        padding-block: clamp(4rem, 10vw, 6rem);
+      }
+.contact {
+        background: var(--light);
+        color: var(--dark);
+        text-align: center;
+      }
+
+      .contact h2 {
+        margin-bottom: 3rem;
+      }
+
+      form {
+        max-width: 400px;
+        margin-inline: auto;
+        display: grid;
+        gap: 1.75rem;
+        font-size: 0.9rem;
+      }
+
+      input,
+      textarea {
+        width: 100%;
+        border: none;
+        border-bottom: 1px solid #d9d9d9;
+        padding: 0.5rem 0;
+        font-family: inherit;
+        font-size: 0.9rem;
+        background: transparent;
+        outline-offset: 2px;
+      }
+
+      textarea {
+        min-height: 120px;
+        resize: vertical;
+      }
+
+      /* submit button */
+      .btn-submit {
+        justify-self: center;
+        background-color: #ff6565;
+        color: white;
+        padding: 15px;
+        border: none;
+        border-radius: 5px
+      }
